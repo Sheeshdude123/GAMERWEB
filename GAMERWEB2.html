@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="776045931903-jb668jl3qr7m9gcc4tr9e2qb6e3injro.apps.googleusercontent.com">
+    <title>GAMERWEB2</title>
+    <link rel="icon" type="image/png" href="image/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="GAMERWEB2.css">
+    <script src="GAMERWEB2.js" defer></script>
+    <script src="rightclick.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="data">
+        <p>Name</p>
+        <p id="name" class="alert alert-success"></p>
+        
+        <p>Profile picture</p>
+        <img id="image" class="rounded-circle" width="100" height="100" alt="Profile Picture"/>
+        
+        <p>Email</p>
+        <p id="email"></p>
+        
+        <button type="button" class="btn btn-danger" onclick="signOut();">Sign Out</button>
+    </div>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="image/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg" alt="logo">
+                <h2>
+                    <span style="color:#f30e0e;">G</span>
+                    <span style="color: #f10f4f;">A</span>
+                    <span style="color: #f0108f;">M</span>
+                    <span style="color: #ee11cc;">E</span>
+                    <span style="color: #d013ed;">R</span>
+                    <span style="color: #9214eb;">W</span>
+                    <span style="color: #5615e9;">E</span>
+                    <span style="color: #1c17e7;">B</span>
+                </h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required >
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                    <button type="submit">Sign up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1><br><span>GAMERWEB2</span><br></h1>
+        <p class="par">Passionate web developer, avid Minecraft player (Java & Bedrock). <br> Crafting code & pixel worlds, 
+            <br> one block at a time. 🚀🎮 </p>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p>copyright &copy;(2023-2024) @Sheesh_dude123. designed by <span>Ricson Dabre.</span> 
+                <a href="https://www.youtube.com/channel/UCCSxtSERIeKZAebsu7ItK-A">
+                    <i class="fa-brands fa-youtube fa-lg" style="color: #ff0000;"></i>
+                </a>  
+                <a href="https://twitter.com/Sheesh_Dude123">
+                    <i class="fa-brands fa-twitter fa-lg" style="color: #1f27fd;"></i>
+                </a> 
+                <a href="https://www.instagram.com/sheesh_dude123">
+                    <i class="fa-brands fa-instagram fa-lg" style="color: #ff00dd;"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        console.log('User signed out.');
+        });
+    }
+    </script>
+</body>
+</html>
